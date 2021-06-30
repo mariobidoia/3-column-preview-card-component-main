@@ -1,0 +1,148 @@
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+  /* Colors
+
+Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+
+  /* (paragraphs) */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+
+  /* (background, headings, buttons) */
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  padding: 30px 5px;
+  background-color: var(--very-light-gray);
+}
+
+.card {
+  padding: 40px 56px 50px 56px;
+}
+
+.card h1 {
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+}
+
+.card p {
+  font-size: 15px;
+  color: var(--transparent-white);
+  font-family: "Lexend Deca", sans-serif;
+  text-align: left;
+  line-height: 25px;
+}
+
+.sedans {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.sedans .button-rounded {
+  color: var(--bright-orange);
+  border: solid 2px var(--bright-orange);
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.suvs .button-rounded {
+  color: var(--dark-cyan);
+  border: solid 2px var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.luxury .button-rounded {
+  color: var(--very-dark-cyan);
+  border: solid 2px var(--very-dark-cyan);
+}
+
+.button-rounded {
+  margin-top: 0.5em;
+  border: none;
+  padding: 16px 35px;
+  border-radius: 25px;
+  background-color: var(--very-light-gray);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 600px) {
+   body {
+    flex-direction: row;
+    height: calc(100vh - 16px);
+  } 
+
+  .container{
+    display: flex;
+    margin: auto 24vw;
+  }
+
+  .button-rounded{
+    margin-top: 5rem;
+    align-self: flex-start;
+  }
+
+  .button-rounded:hover{
+    background-color: transparent;
+    color: var(--transparent-white);
+    border: solid 2px var(--transparent-white);
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .sedans {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+
+  .title-desc{
+    margin-top: 1rem;
+  }
+
+  .title-desc h1{
+    margin: 2rem auto;
+  }
+  .luxury {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  } 
+}
+
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
