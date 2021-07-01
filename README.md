@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [3 Column Card](https://github.com/mariobidoia/3-column-preview-card-component-main)
+- Live Site URL: [3 column Netlify](https://threecard-frontendmentor.netlify.app/)
 
 ## My process
 
