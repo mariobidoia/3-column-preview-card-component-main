@@ -96,7 +96,7 @@ body {
 
   .container{
     display: flex;
-    margin: auto 24vw;
+    margin: auto 200px;
   }
 
   .button-rounded{
@@ -120,6 +120,8 @@ body {
 
   .title-desc{
     margin-top: 1rem;
+    margin-right: 9px;
+    margin-left: 10px;
   }
 
   .title-desc h1{
